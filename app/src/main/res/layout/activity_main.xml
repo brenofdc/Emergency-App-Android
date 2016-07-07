@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainLayout"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.john.emergency.MainActivity"
+    android:clickable="true"
+    android:background="@drawable/bg_segunda_tela">
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="75dp"
+        android:id="@+id/Favoritos"
+        android:background="@android:drawable/btn_star_big_on"
+        android:layout_marginTop="145dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:onClick="abrirfavoritos" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Configuracoes"
+        android:src="@android:drawable/ic_menu_manage"
+        android:layout_alignBottom="@+id/Favoritos"
+        android:layout_toRightOf="@+id/Favoritos"
+        android:layout_toEndOf="@+id/Favoritos"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:onClick="abrirConfiguracoes" />
+
+</RelativeLayout>
